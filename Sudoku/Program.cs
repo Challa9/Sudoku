@@ -21,11 +21,12 @@
             return "this is returng";
         }
         static void Main(string[] args){
-
+            /*
             string eleven = "*";string twelve = "*";string thirteen = "*";string fifteen = "?";string sixteen = "?";string nineteen = "?";string twenty_four = "?";string twenty_nine = "?"; string thirty_one = "?";string thirty_nine = "?";string fourty_two = "?";string fourty_four = "?";string fourty_five = "?";string fourty_seven = "?";string fourty_eight = "?";string fifty_one = "?";string fifty_four = "?";string fifty_five = "?";string fifty_six = "?";string fifty_eight = "?";string sixty_one = "?";string sixty_two = "?";string sixty_three = "?";string sixty_five = "?";string sixty_six = "?";string sixty_eight = "?";string sixty_nine = "?";string seventy_one = "?";string seventy_two = "?";string seventy_three = "?";string seventy_four = "?";string seventy_eight = "?";string seventy_nine = "?";string eighty_one = "?";string eighty_three = "?";string eighty_four = "?";string eighty_five = "?";string eighty_six = "?";string eighty_seven = "?";string eighty_eight = "?";string ninety_two = "?";string ninety_six = "?";string ninety_seven = "?";string ninety_eight = "?";string ninety_nine = "?";
 
             string[] aviable_slots = {"I", "I", "I", "I", "I", "I", twenty_four, twenty_nine, thirty_one, thirty_nine, fourty_two, fourty_four, fourty_five, fourty_seven, fourty_eight, fifty_one, fifty_four, fifty_five, fifty_six, fifty_eight, sixty_one, sixty_two, sixty_three, sixty_five, sixty_six, sixty_eight, sixty_nine,seventy_one, seventy_two, seventy_three, seventy_four, seventy_eight, seventy_nine, eighty_one, eighty_three, eighty_four, eighty_five, eighty_six, eighty_seven, eighty_eight, ninety_two, ninety_six, ninety_seven, ninety_eight, ninety_nine};
-
+            */
+            string[] aviable_slots = {"*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*"};
             print_board(aviable_slots);
 
             bool run = true;
