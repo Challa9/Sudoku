@@ -1,9 +1,7 @@
-﻿namespace Sudoku{
+namespace Sudoku{
     class Program{
 
-        static string print_board(string[] num){
-
-            
+        static string print_board(string[] num){            
             Console.WriteLine("    1 2 3   4 5 6   7 8 9  ");
             Console.WriteLine("  ╔═══════╦═══════╦═══════╗");
             Console.WriteLine("1 ║ "+num[0]+" "+num[1]+" "+num[2]+" ║ 6 "+num[3]+" "+num[4]+" ║ 4 5 "+num[5]+" ║");
@@ -20,13 +18,204 @@
             Console.WriteLine("  ╚═══════╩═══════╩═══════╝");
             return "this is returng";
         }
-        static void Main(string[] args){
-            /*
-            string eleven = "*";string twelve = "*";string thirteen = "*";string fifteen = "?";string sixteen = "?";string nineteen = "?";string twenty_four = "?";string twenty_nine = "?"; string thirty_one = "?";string thirty_nine = "?";string fourty_two = "?";string fourty_four = "?";string fourty_five = "?";string fourty_seven = "?";string fourty_eight = "?";string fifty_one = "?";string fifty_four = "?";string fifty_five = "?";string fifty_six = "?";string fifty_eight = "?";string sixty_one = "?";string sixty_two = "?";string sixty_three = "?";string sixty_five = "?";string sixty_six = "?";string sixty_eight = "?";string sixty_nine = "?";string seventy_one = "?";string seventy_two = "?";string seventy_three = "?";string seventy_four = "?";string seventy_eight = "?";string seventy_nine = "?";string eighty_one = "?";string eighty_three = "?";string eighty_four = "?";string eighty_five = "?";string eighty_six = "?";string eighty_seven = "?";string eighty_eight = "?";string ninety_two = "?";string ninety_six = "?";string ninety_seven = "?";string ninety_eight = "?";string ninety_nine = "?";
 
-            string[] aviable_slots = {"I", "I", "I", "I", "I", "I", twenty_four, twenty_nine, thirty_one, thirty_nine, fourty_two, fourty_four, fourty_five, fourty_seven, fourty_eight, fifty_one, fifty_four, fifty_five, fifty_six, fifty_eight, sixty_one, sixty_two, sixty_three, sixty_five, sixty_six, sixty_eight, sixty_nine,seventy_one, seventy_two, seventy_three, seventy_four, seventy_eight, seventy_nine, eighty_one, eighty_three, eighty_four, eighty_five, eighty_six, eighty_seven, eighty_eight, ninety_two, ninety_six, ninety_seven, ninety_eight, ninety_nine};
-            */
-            string[] aviable_slots = {"*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*"};
+        static void case_check(string[] aviable_slots, string input, string answer){
+
+            switch (input) 
+            {
+                case "11":
+                    aviable_slots[0] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "12":
+                    aviable_slots[1] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "13":
+                    aviable_slots[2] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "15":
+                    aviable_slots[3] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "16":
+                    aviable_slots[4] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "19":
+                    aviable_slots[5] = answer;
+                    print_board(aviable_slots);
+                    break;
+                
+                case "24":
+                    aviable_slots[6] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "29":
+                    aviable_slots[7] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "31":
+                    aviable_slots[8] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "39":
+                    aviable_slots[9] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "42":
+                    aviable_slots[10] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "44":
+                    aviable_slots[11] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "45":
+                    aviable_slots[12] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "47":
+                    aviable_slots[13] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "48":
+                    aviable_slots[14] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "51":
+                    aviable_slots[15] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "54":
+                    aviable_slots[16] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "55":
+                    aviable_slots[17] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "56":
+                    aviable_slots[18] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "58":
+                    aviable_slots[19] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "61":
+                    aviable_slots[20] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "62":
+                    aviable_slots[21] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "63":
+                    aviable_slots[22] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "65":
+                    aviable_slots[23] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "66":
+                    aviable_slots[24] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "68":
+                    aviable_slots[25] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "69":
+                    aviable_slots[26] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "71":
+                    aviable_slots[27] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "72":
+                    aviable_slots[28] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "73":
+                    aviable_slots[29] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "74":
+                    aviable_slots[30] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "78":
+                    aviable_slots[31] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "79":
+                    aviable_slots[32] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "81":
+                    aviable_slots[33] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "83":
+                    aviable_slots[34] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "84":
+                    aviable_slots[35] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "85":
+                    aviable_slots[36] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "86":
+                    aviable_slots[37] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "87":
+                    aviable_slots[38] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "88":
+                    aviable_slots[39] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "92":
+                    aviable_slots[40] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "96":
+                    aviable_slots[41] = answer;
+                    
+                    print_board(aviable_slots);
+                    break;
+                case "97":
+                    aviable_slots[42] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "98":
+                    aviable_slots[43] = answer;
+                    print_board(aviable_slots);
+                    break;
+                case "99":
+                    aviable_slots[44] = answer;
+                    print_board(aviable_slots);
+                    break;
+                
+                
+                default:
+                    Console.WriteLine("oops, something went wrong");
+                    break;
+            }
+        }
+        static void Main(string[] args){
+            
+            string[] aviable_slots = {"*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*", "*"}; 
+            string[] correct_answers = {"3", "9", "8", "7", "1", "2", "8", "3", "5", "6", "3", "2", "6", "5", "1", "7", "1", "4", "8", "3", "6", "1", "9", "5", "7", "4", "8", "1", "4", "3", "9", "6", "5", "9", "7", "5", "1", "6", "3", "2", "5", "4", "8", "9", "1"};
             print_board(aviable_slots);
 
             bool run = true;
@@ -34,9 +223,9 @@
                 try{
                     bool ask_for_pick = true;
                     while(ask_for_pick){
+                        #nullable disable
                         Console.Write("Pick a row and colum: ");
                         string input = Console.ReadLine();
-
                         int new_input = Convert.ToInt32(input);
                         if(new_input > 99 || new_input < 11){
                             Console.Write("Bad, answer, pick a 9x9 row and column");
@@ -59,197 +248,7 @@
                                 }
                                 else{
                                     ask_for_answer = false;
-                                    Console.WriteLine("GOOD ANSWER, THIS WORKS");
-                                    Console.WriteLine("Your answer: " + answer);
-                                    switch (input) 
-                                    {
-                                        case "11":
-                                            aviable_slots[0] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "12":
-                                            aviable_slots[1] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "13":
-                                            aviable_slots[2] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "15":
-                                            aviable_slots[3] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "16":
-                                            aviable_slots[4] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "19":
-                                            aviable_slots[5] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        
-                                        case "24":
-                                            aviable_slots[6] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "29":
-                                            aviable_slots[7] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "31":
-                                            aviable_slots[8] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "39":
-                                            aviable_slots[9] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "42":
-                                            aviable_slots[10] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "45":
-                                            aviable_slots[11] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "46":
-                                            aviable_slots[12] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "47":
-                                            aviable_slots[13] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "48":
-                                            aviable_slots[14] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "51":
-                                            aviable_slots[15] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "54":
-                                            aviable_slots[16] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "55":
-                                            aviable_slots[17] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "56":
-                                            aviable_slots[18] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "58":
-                                            aviable_slots[19] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "61":
-                                            aviable_slots[20] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "62":
-                                            aviable_slots[21] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "63":
-                                            aviable_slots[22] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "65":
-                                            aviable_slots[23] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "66":
-                                            aviable_slots[24] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "68":
-                                            aviable_slots[25] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "69":
-                                            aviable_slots[26] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "71":
-                                            aviable_slots[27] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "72":
-                                            aviable_slots[28] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "73":
-                                            aviable_slots[29] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "74":
-                                            aviable_slots[30] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "78":
-                                            aviable_slots[31] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "79":
-                                            aviable_slots[32] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "81":
-                                            aviable_slots[33] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "83":
-                                            aviable_slots[34] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "84":
-                                            aviable_slots[35] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "85":
-                                            aviable_slots[36] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "86":
-                                            aviable_slots[37] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "87":
-                                            aviable_slots[38] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "88":
-                                            aviable_slots[39] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "92":
-                                            aviable_slots[40] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "96":
-                                            aviable_slots[41] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "97":
-                                            aviable_slots[42] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "98":
-                                            aviable_slots[43] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        case "99":
-                                            aviable_slots[44] = answer;
-                                            print_board(aviable_slots);
-                                            break;
-                                        
-                                        
-                                        default:
-                                            // code block
-                                            break;
-                                    }
+                                    case_check(aviable_slots, input, answer);
                                 }
                             }
                             
@@ -257,14 +256,27 @@
                     }
                     
                 }
+                
                 catch{
                     Console.WriteLine("Bad Input, try again");
+                    
+                    
                 }
+
+                int correct_answer_count = 0;
+                
+                for(int i = 0; i < 45; i++){
+                    if(aviable_slots[i] == correct_answers[i]){
+                        correct_answer_count += 1;
+                    }
+                    if(correct_answer_count == 45){
+                        Console.WriteLine("CONGRATS, YOU COMPLETED THE PUZZLE");
+                        run = false;
+                    }
+                }
+                    
                 
             }
         }
     }
 }
-
-
-/*44 and 45 are not working, don't know why, just run it and see*/
